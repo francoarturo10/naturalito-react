@@ -41,7 +41,7 @@ export default function Footer() {
                             <span className="px-4 py-3 bg-blanco-humo rounded-full text-xl">📱</span>
                             <div>
                                 <p className="text-xl font-bold text-texto">WhatsApp</p>
-                                <p className="text-lg font-semibold">+51 982 956 356</p>
+                                <p className="text-lg font-semibold">+51 936 335 903</p>
                             </div>
                         </div>
                         <div className="flex items-center gap-3">

@@ -27,7 +27,7 @@ export default function InicioPage() {
 
                 <aside className="
                     flex flex-col justify-center gap-4 mt-7 mb-7 pt-7 pb-7
-                    bg-rosa/50 text-texto m-4
+                    bg-rosa/50 text-texto m-4 rounded-2xl
                 ">
                     <h1 className="text-4xl font-bold">👩🏻‍🦱 Sobre <span className="text-verde">Mí</span></h1>
                     <p className="text-xl text-parrafo">
@@ -38,7 +38,7 @@ export default function InicioPage() {
                 <section className="m-4 bg-blanco rounded-2xl flex flex-col justify-center items-center gap-4 p-8">
                     <article className="flex flex-col justify-center items-center gap-3">
                         <div className="w-40 h-40 bg-rosa rounded-full flex justify-center items-center">
-                            <img src="./kefir.webp" alt="" className="w-30 ml-2 mb-3" />
+                            <img src="./kefir.png" alt="" className="w-30 " />
                         </div>
                         <div>
                             <h2 className="text-3xl font-bold">Maria</h2>
@@ -139,7 +139,7 @@ export default function InicioPage() {
             <div className="m-4 rounded-2xl p-6 bg-blanco flex flex-col items-center gap-5">
                 <div className="flex flex-col gap-3">
                     <div className="text-center">
-                        <h2 className="text-lg text-texto font-bold">✨ ¿Por qué elegir Kefyto?</h2>
+                        <h2 className="text-lg text-texto font-bold">✨ ¿Por qué elegir Naturalito?</h2>
                         <span className="text-sm text-parrafo">Tu salud merece lo mejor</span>
                     </div>
                     <div className="w-70 bg-verde-claro rounded-2xl flex flex-col gap-1 justify-center items-center p-4">
@@ -281,7 +281,7 @@ export default function InicioPage() {
                
                 <button className="flex items-center gap-4 p-4 bg-green-400/80 rounded-2xl text-md font-bold mb-7">
                     <FaWhatsapp  size={30} color="green" strokeWidth={1.5}/>
-                    WhatsApp: +51 982 956 356
+                    WhatsApp: +51 936 335 903
                 </button>
 
             </div>
