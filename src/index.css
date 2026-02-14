@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@theme{
+    --color-blanco: #f9f8fd;
+    --color-blanco-humo: #d9deb5;
+    --color-verde: #6d5515;
+    --color-verde-claro: #d5dbaf;
+    --color-rosa: #fcebcf;
+    --color-texto: oklch(21.6% 0.006 56.043);
+    --color-parrafo: oklch(37.4% 0.01 67.558);
+    --color-fondo: #ebe1c6;
+
+    --background-image-gradiente-natural : linear-gradient(to top, var(--color-verde-claro), var(--color-verde));
+    --background-image-gradiente-natural-2 : linear-gradient(to left, var(--color-verde-claro), var(--color-verde));
+    --background-image-gradiente-natural-3 : linear-gradient(to top, var(--color-verde), var(--color-blanco) 70%);
+}
