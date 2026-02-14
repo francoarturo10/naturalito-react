@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 
 export default function Slider({slides=[]}) {
-    console.log(slides);
     const [index, setIndex] = useState(0);
 
     const next = () => setIndex((prev) => (prev + 1) % slides.length);
@@ -15,8 +14,8 @@ export default function Slider({slides=[]}) {
     if (!slides.length) return null;
 
     return (
-        <div className="relative w-full sm:h-60 md:h-125 h-185 ">
-            <div className="relative h-205 overflow-hidden rounded-base md:h-125 ">
+        <div className="relative w-full sm:h-60 md:h-125 h-160 ">
+            <div className="relative h-160 overflow-hidden rounded-base md:h-125 ">
                 {
                     slides.map( (img,i) => (
                         <div

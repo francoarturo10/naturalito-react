@@ -9,9 +9,10 @@ export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggle = () => setIsOpen(!isOpen);
-
+    console.log(isOpen);
+    
     return (
-        <header className="fixed top-0 left-0 w-full z-50 grid grid-cols-2 bg-blanco text-verde font-bold ">
+        <header className="grid grid-cols-2 bg-blanco text-verde font-bold ">
             <div className="justify-start">
                 <img 
                     src="./imagen1.jpeg" alt="naturalito" 
@@ -47,6 +48,7 @@ export default function Navbar() {
                         >
                             <NavLink
                                 to={link.href}
+                                onClick={() => setIsOpen(false)} 
                             >
                                 {link.title}
                             </NavLink>
