@@ -7,7 +7,7 @@ export default function Footer() {
     return (
         <div className="bg-gradiente-natural-3 flex flex-col items-center gap-11">
             <div className="flex flex-col gap-11">
-                <div className="flex flex-col gap-9">
+                <div className="flex flex-col items-center gap-9">
                     <img src="./imagen1.jpeg" alt="naturalito" className="w-70"/>
                     <div className="text-texto font-semibold text-xl w-70 text-center">
                         <p>Tus bulgaritos 100% Artesanales</p>
