@@ -20,7 +20,7 @@ export default function Navbar() {
             </div>
 
             <button 
-                className="flex justify-end items-center md:hidden m-au" 
+                className="flex justify-end items-center md:hidden m-auto" 
                 onClick={toggle}
             >
                 {

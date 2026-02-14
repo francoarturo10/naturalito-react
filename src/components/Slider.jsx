@@ -15,8 +15,8 @@ export default function Slider({slides=[]}) {
     if (!slides.length) return null;
 
     return (
-        <div className="relative w-full sm:h-60 md:h-125 ">
-            <div className="h-140 overflow-hidden rounded-base md:h-125 ">
+        <div className="relative w-full sm:h-60 md:h-125 h-185 ">
+            <div className="relative h-205 overflow-hidden rounded-base md:h-125 ">
                 {
                     slides.map( (img,i) => (
                         <div
@@ -28,7 +28,7 @@ export default function Slider({slides=[]}) {
                             <img 
                                 src={img} 
                                 alt="banners"
-                                className="absolute block w-full h-140 md:h-125 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                className="absolute block w-full h-161 md:h-125 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                             />
                         </div>
                     ))

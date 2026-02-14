@@ -6,7 +6,7 @@ export default function Footer() {
 
     return (
         <div className="bg-gradiente-natural-3 flex flex-col items-center gap-11">
-            <div>
+            <div className="flex flex-col gap-11">
                 <div className="flex flex-col gap-9">
                     <img src="./imagen1.jpeg" alt="naturalito" className="w-70"/>
                     <div className="text-texto font-semibold text-xl w-70 text-center">
@@ -15,7 +15,7 @@ export default function Footer() {
                     </div>
                 </div>
 
-                <header className="flex flex-col gap-5 text-left w-70 ">
+                <header className="flex flex-col gap-5 text-left w-80 ">
                     <h1 className="text-texto font-bold text-2xl">Navegación</h1>
                     <nav className="flex flex-col gap-3 text-xl font-semibold">
                         {
@@ -38,21 +38,21 @@ export default function Footer() {
                     <h1 className="text-texto font-bold text-2xl">Contacto</h1>
                     <div className="flex flex-col gap-5">
                         <div className="flex items-center gap-3">
-                            <span className="px-4 py-3 bg-blanco rounded-full text-xl">📱</span>
+                            <span className="px-4 py-3 bg-blanco-humo rounded-full text-xl">📱</span>
                             <div>
                                 <p className="text-xl font-bold text-texto">WhatsApp</p>
                                 <p className="text-lg font-semibold">+51 982 956 356</p>
                             </div>
                         </div>
                         <div className="flex items-center gap-3">
-                            <span className="px-4 py-3 bg-blanco rounded-full text-xl">📱</span>
+                            <span className="px-4 py-3 bg-blanco-humo rounded-full text-xl">📱</span>
                             <div>
                                 <p className="text-xl font-bold text-texto">Instagram</p>
                                 <a className="text-lg font-semibold hover:text-blanco" target="_blank" href="https://www.instagram.com/naturalito.kefir?igsh=ZW9jZXQxaGZ4NXRv">@Nauralito.kefir</a>
                             </div>
                         </div>
                         <div className="flex items-center gap-3">
-                            <span className="px-4 py-3 bg-blanco rounded-full text-xl">📍</span>
+                            <span className="px-4 py-3 bg-blanco-humo rounded-full text-xl">📍</span>
                             <div>
                                 <p className="text-xl font-bold text-texto">Ubicación</p>
                                 <p className="text-lg font-semibold">Trujillo, La Libertad</p>
