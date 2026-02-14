@@ -48,7 +48,7 @@ export default function Footer() {
                             <span className="px-4 py-3 bg-blanco-humo rounded-full text-xl">📱</span>
                             <div>
                                 <p className="text-xl font-bold text-texto">Instagram</p>
-                                <a className="text-lg font-semibold hover:text-blanco" target="_blank" href="https://www.instagram.com/naturalito.kefir?igsh=ZW9jZXQxaGZ4NXRv">@Nauralito.kefir</a>
+                                <a className="text-lg font-semibold hover:text-blanco" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/naturalito.kefir">@Naturalito.kefir</a>
                             </div>
                         </div>
                         <div className="flex items-center gap-3">
