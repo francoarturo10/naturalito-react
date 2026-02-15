@@ -5,57 +5,71 @@ import { IoClose } from "react-icons/io5";
 import { useState } from "react";
 
 export default function Navbar() {
-
     const [isOpen, setIsOpen] = useState(false);
 
     const toggle = () => setIsOpen(!isOpen);
-    console.log(isOpen);
     
     return (
-        <header className="grid grid-cols-2 bg-blanco text-verde font-bold ">
-            <div className="justify-start">
-                <img 
-                    src="./imagen1.jpeg" alt="naturalito" 
-                    className="w-30 m-auto"
-                />
+        <header className="bg-blanco sticky top-0 z-50 shadow-md">
+            <div className="flex items-center justify-between px-4 py-3 max-w-7xl mx-auto">
+                {/* Logo */}
+                <div className="w-24 md:w-28">
+                    <img 
+                        src="./imagen1.jpeg" 
+                        alt="naturalito" 
+                        className="w-full"
+                    />
+                </div>
+
+                {/* Desktop Nav */}
+                <nav className="hidden md:flex gap-1">
+                    {navbLink.map(link => (
+                        <NavLink
+                            key={link.id}
+                            to={link.href}
+                            className={({ isActive }) =>
+                                `px-4 py-2 rounded-xl font-semibold transition-colors ${
+                                    isActive 
+                                        ? 'bg-verde text-blanco' 
+                                        : 'text-verde hover:bg-rosa'
+                                }`
+                            }
+                        >
+                            {link.title}
+                        </NavLink>
+                    ))}
+                </nav>
+
+                {/* Mobile Toggle */}
+                <button 
+                    onClick={toggle}
+                    className="md:hidden p-2 text-verde"
+                >
+                    {isOpen ? <IoClose size={32} /> : <GiHamburgerMenu size={32} />}
+                </button>
             </div>
 
-            <button 
-                className="flex justify-end items-center md:hidden m-auto" 
-                onClick={toggle}
-            >
-                {
-                    isOpen ? <IoClose size={34}/>:<GiHamburgerMenu size={34} className=" "/>
-                }
-                
-            </button>
-
-            {/*  */}
-            <nav className={`
-                col-span-2 md:col-span-1 text-center transition-all duration-200
-                ${
-                    isOpen ?
-                    " bg-verde-claro flex flex-col gap-2 text-"
-                    :
-                    "hidden"
-                }
-            `}>
-                {
-                    navbLink.map( link =>(
-                        <div 
-                            className='hover:bg-verde hover:text-blanco-humo'
+            {/* Mobile Nav */}
+            {isOpen && (
+                <nav className="md:hidden bg-verde-claro border-t border-verde-claro">
+                    {navbLink.map(link => (
+                        <NavLink
                             key={link.id}
+                            to={link.href}
+                            onClick={() => setIsOpen(false)}
+                            className={({ isActive }) =>
+                                `block px-6 py-4 font-semibold border-b border-verde-claro/50 ${
+                                    isActive 
+                                        ? 'bg-verde text-blanco' 
+                                        : 'text-verde hover:bg-rosa'
+                                }`
+                            }
                         >
-                            <NavLink
-                                to={link.href}
-                                onClick={() => setIsOpen(false)} 
-                            >
-                                {link.title}
-                            </NavLink>
-                        </div>
-                    ))
-                }
-            </nav>
+                            {link.title}
+                        </NavLink>
+                    ))}
+                </nav>
+            )}
         </header>
     );
 }

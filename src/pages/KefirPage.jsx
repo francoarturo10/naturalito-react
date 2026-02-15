@@ -158,7 +158,7 @@ export default function KefirPage() {
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                             {/* Alimentación */}
                             <div className="bg-blanco rounded-2xl p-6 flex gap-4">
-                                <div className="flex-shrink-0">
+                                <div className="shrink-0">
                                     <div className="w-14 h-14 bg-verde-claro rounded-full 
                                                   flex items-center justify-center">
                                         <GiMilkCarton size={28} className="text-verde" />
@@ -176,7 +176,7 @@ export default function KefirPage() {
 
                             {/* Utensilios */}
                             <div className="bg-blanco rounded-2xl p-6 flex gap-4">
-                                <div className="flex-shrink-0">
+                                <div className="shrink-0">
                                     <div className="w-14 h-14 bg-verde-claro rounded-full 
                                                   flex items-center justify-center">
                                         <span className="text-3xl">🥄</span>
@@ -194,7 +194,7 @@ export default function KefirPage() {
 
                             {/* Higiene */}
                             <div className="bg-blanco rounded-2xl p-6 flex gap-4">
-                                <div className="flex-shrink-0">
+                                <div className="shrink-0">
                                     <div className="w-14 h-14 bg-verde-claro rounded-full 
                                                   flex items-center justify-center">
                                         <MdCleaningServices size={28} className="text-verde" />
@@ -212,7 +212,7 @@ export default function KefirPage() {
 
                             {/* Condiciones */}
                             <div className="bg-blanco rounded-2xl p-6 flex gap-4">
-                                <div className="flex-shrink-0">
+                                <div className="shrink-0">
                                     <div className="w-14 h-14 bg-verde-claro rounded-full 
                                                   flex items-center justify-center">
                                         <span className="text-3xl">🌡️</span>

@@ -16,14 +16,14 @@ function Accordion({ title, children, isOpen, onToggle }) {
                 </h3>
                 <IoChevronDown 
                     size={24} 
-                    className={`text-verde flex-shrink-0 transition-transform duration-300 
+                    className={`text-verde shrink-0 transition-transform duration-300 
                               ${isOpen ? 'rotate-180' : ''}`}
                 />
             </button>
             
             <div 
                 className={`overflow-hidden transition-all duration-300 ease-in-out
-                          ${isOpen ? 'max-h-[2000px] opacity-100' : 'max-h-0 opacity-0'}`}
+                          ${isOpen ? 'max-h-500 opacity-100' : 'max-h-0 opacity-0'}`}
             >
                 <div className="px-6 py-5 bg-verde-claro/20 border-t border-verde-claro">
                     {children}
